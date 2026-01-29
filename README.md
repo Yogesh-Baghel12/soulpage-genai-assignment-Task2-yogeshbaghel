@@ -62,7 +62,6 @@ requirements.txt  # Python dependencies
 ---
 
 ## Application Flow
-
 ```mermaid
 flowchart TD
     A[User opens app] --> B[Sidebar: Select or create chat]
@@ -72,7 +71,7 @@ flowchart TD
     D -- No --> F[Skip search]
     E --> G[Combine user input & search results]
     F --> G
-    G --> H[Send to LLM (Groq)]
+    G --> H["Send to LLM (Groq)"]
     H --> I[AI generates response]
     I --> J[Display response in chat]
     J --> K[Update chat history]
