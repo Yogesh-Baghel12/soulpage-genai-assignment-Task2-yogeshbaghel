@@ -64,7 +64,7 @@ requirements.txt  # Python dependencies
 ## Application Flow
 
 ```mermaid
-graph TD
+flowchart TD
     A[User opens app] --> B[Sidebar: Select or create chat]
     B --> C[User types message]
     C --> D{Does query need web search?}
